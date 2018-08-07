@@ -1,8 +1,11 @@
 #lotto
-print ('請猜一個數字1~100之間')
+start = input('請決定一個開始數值')
+end = input('請決定一個結束數值')
+start = int(start)
+end = int(end)
 import random
 count = 0
-r = random.randint(1, 100)
+r = random.randint(start, end)
 while True:
 	y = input ('請猜一個數字：')
 	y = int(y)
